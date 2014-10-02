@@ -1,4 +1,14 @@
 Rails.application.routes.draw do
+  get 'welcome/edu'
+
+  get 'welcome/exp'
+
+  get 'welcome/proj'
+
+  get 'welcome/img'
+
+  root to: 'welcome#edu'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

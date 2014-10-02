@@ -1,12 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>MyProfile</title>
+  <title>Benjamin Bao</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
 </head>
 <body>
+<div id='profileInfo'>
+  <canvas id='profileInfoImg' width="250" height="250"></canvas>
+  <div id='profileInfoText'>
+    <p>Benjamin Yuyang Bao</p>
+    <p>I'm Ben, a crazy computer euthusiast!</br>I'm currently a UCLA undergraduate senior student </br> Welcome to my website!</p>
+    <p>Email: byyagp@gmail.com </br> Cell: +13109139124</p>
+    <%= icon('flag')%>
+  </div>
+</div>
 
 <%= yield %>
 
