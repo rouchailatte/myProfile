@@ -27,7 +27,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 
 gem 'font-awesome-sass', '~> 4.2.0'
-
+gem 'font-awesome-rails'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -39,4 +39,3 @@ gem 'font-awesome-sass', '~> 4.2.0'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-

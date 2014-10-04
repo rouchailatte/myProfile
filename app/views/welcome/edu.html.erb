@@ -1,2 +1,56 @@
-<h1>Welcome#edu</h1>
-<p>Find me in app/views/welcome/edu.html.erb</p>
+<div id="education">
+  <h2><span class="headerLarge">E</span>ducation</h2>
+  <p class="educationName">
+    <%= fa_icon "toggle-right" %> &nbsp University of California, Los Angeles (UCLA) - Los Angeles, USA
+  </p>
+
+  <%= image_tag("ucla.png", :alt => "UCLA logo", size: "250x120") %>
+
+  <ul class="educationList">
+    <li>B.S. in Applied Mathematics, with specialization in Computing</li>
+    <li>Major GPA: 3.7/4</li>
+    <li>Ugrad Courses:
+      <ul class='educationListCourse'>
+        <li>Math 32a, 32b: Multivariable Calculus</li>
+        <li>Math 33a: Intro to Linear Algebra</li>
+        <li>Math 33b: Differential Equation</li>
+        <li>Physics 1a: Mechanics</li>
+        <li>Physics 1b: Wave and Oscillation</li>
+        <li>Chem 20A: Atomic Structure</li>
+        <li>PIC 10a,b,c: Intro/Intermediate/Advanced C++</li>
+        <li>PIC 40a: Web Programming</li>
+        <li>Math 115A: Linear Algebra</li>
+        <li>Math 131A: Real Analysis</li>
+        <li>Math 132: Complex Analysis</li>
+        <li>Math 134: Nonlinear System</li>
+        <li>Math 142: Mathematical Modeling</li>
+        <li>Math 151A: Numerical Methods</li>
+        <li>Math 155: Digital Image Processing</li>
+        <li>Math 164: Optimization</li>
+        <li>Math 170a,b: Probability Theory</li>
+        <li>CS 118: Computer Network</li>
+        <li>CS 143:  Database Management System</li>
+        <li>CS 170A: Computer Methods</li>
+        <li>CS 180: Algorithm and Complexity</li>
+      </ul>
+    </li>
+  </ul>
+
+
+
+
+  <p class="educationName" id="educationNameSecond">
+    <%= fa_icon "toggle-right" %> &nbsp Yale University - New Haven, USA
+  </p>
+
+  <%= image_tag("yale.png", :alt => "Yale logo", size: "200x125") %>
+
+  <ul class="educationList">
+    <li>Summer Program, 2014</li>
+    <li>Courses:
+      <ul class='educationListCourse'>
+        <li>Mathematical Logic</li>
+      </ul>
+    </li>
+  </ul>
+</div>

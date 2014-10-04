@@ -1,4 +1,20 @@
- /**************** For the application part  ****************/
+/*
+ *= require font-awesome
+ */
+
+/********* custom For the font *********/
+
+// @font-face {
+//   font-family:'Helvetica';
+//   src:font-url('HelveticaNeue.dfont');
+// }
+
+/***************************************/
+
+
+
+
+/**************** For the application part  ****************/
 
  @import "font-awesome-sprockets";
  @import "font-awesome";
@@ -6,14 +22,15 @@
 *{padding: 0; margin: 0;}
 
 body
-{ 
-  background: url(bg.png) no-repeat center center fixed; 
+{
+  background: url(bg.png) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   color: #fff;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans';
+  font-weight: 300;
 }
 
 #profileInfo
@@ -36,20 +53,78 @@ body
 #profileInfoText
 {
   width: auto;
-  padding: 0 0 0 30px;
+  padding: 0 0 0 40px;
   font-size: 16px;
 }
 
 #profileInfoText p:nth-child(1)
 {
-  font-size: 30px;
-  font-weight: bold;
+  font-size: 34px;
 }
 
 #profileInfoText p:nth-child(2)
 {
   padding: 20px 0 20px 0;
-  font-weight: light;
 }
 
+#profileIcon
+{
+  width: 700px;
+  display: flex;
+  flex-direction: row;
+  margin: 80px auto;
+}
+
+#profileIcon p
+{
+  padding: 0 36px;
+}
+
+/********************************************************/
+
+
+
+
+/**************** Welcome controller css ****************/
+
+#education
+{
+  width: 700px;
+  margin: 0 auto;
+  font-weight: 400;
+}
+
+#education h2
+{
+  text-align: center;
+  margin: 15px 0;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.headerLarge{ font-size:35px;}
+
+.educationList
+{
+  list-style: none;
+}
+
+.educationName
+{
+  font-size: 20px;
+  margin: 5px 0 0 0;
+}
+
+#educationNameSecond {margin: 25px 0 0 0;}
+
+.educationListCourse
+{
+  list-style: none;
+  padding: 10px 0 0 15px;
+}
+
+.educationListCourse li
+{
+  font-weight: 300;
+}
 /********************************************************/

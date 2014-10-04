@@ -9,13 +9,19 @@
 </head>
 <body>
 <div id='profileInfo'>
-  <canvas id='profileInfoImg' width="250" height="250"></canvas>
+  <canvas id='profileInfoImg' width="220" height="200"></canvas>
   <div id='profileInfoText'>
     <p>Benjamin Yuyang Bao</p>
-    <p>I'm Ben, a crazy computer euthusiast!</br>I'm currently a UCLA undergraduate senior student </br> Welcome to my website!</p>
-    <p>Email: byyagp@gmail.com </br> Cell: +13109139124</p>
-    <%= icon('flag')%>
+    <p>I'm Ben, a crazy computer euthusiast!</br>I'm currently a UCLA ugrad senior student </br> Welcome to my website!</p>
+    <p>Email: byyagp@gmail.com </br> Cell: +13109139124 </br> Address: 10933 Rochester Ave, Apt 416</p>
   </div>
+</div>
+
+<div id="profileIcon">
+  <p><%= fa_icon "mortar-board 5x" %></p>
+  <p><%= fa_icon "suitcase 5x" %></p>
+  <p><%= fa_icon "lightbulb-o 5x" %></p>
+  <p><%= fa_icon "photo 5x" %></p>
 </div>
 
 <%= yield %>
