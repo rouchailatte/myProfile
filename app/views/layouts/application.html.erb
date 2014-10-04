@@ -18,10 +18,10 @@
 </div>
 
 <div id="profileIcon">
-  <p><%= fa_icon "mortar-board 5x" %></p>
-  <p><%= fa_icon "suitcase 5x" %></p>
-  <p><%= fa_icon "lightbulb-o 5x" %></p>
-  <p><%= fa_icon "photo 5x" %></p>
+  <p><%=link_to (fa_icon "mortar-board 5x"), welcome_edu_path %></p>
+  <p><%= link_to (fa_icon "suitcase 5x"), welcome_exp_path %></p>
+  <p><%= link_to (fa_icon "lightbulb-o 5x"), welcome_proj_path %></p>
+  <p><%= link_to (fa_icon "photo 5x"), welcome_img_path %></p>
 </div>
 
 <%= yield %>
