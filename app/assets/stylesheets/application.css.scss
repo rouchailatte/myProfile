@@ -23,43 +23,41 @@
 
 body
 {
-  background: url(bg.png) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  color: #fff;
-  font-family: 'Open Sans';
-  font-weight: 300;
+  width: 650px;
+  background-color: #0a0a0a;
+  color: #3deb00;
+  font-family: 'Andale Mono';
+  font-size: 15px;
+  margin: 40px auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#name
+{
+  margin: 40px auto;
 }
 
 #profileInfo
 {
-  width: 700px;
   display: flex;
   display: -webkit-flex;
   flex-direction: row;
   -webkit-flex-direction:row;
 
-  margin: 200px auto 0 auto;
-  font-size: 20px;
+  margin: 0 auto;
 }
 
 #profileInfoImg
 {
-  border: 1px solid #fff;
+  border: 2px solid #3deb00;
+  margin: 0 0 0 30px;
 }
 
 #profileInfoText
 {
   width: auto;
   padding: 0 0 0 40px;
-  font-size: 16px;
-}
-
-#profileInfoText p:nth-child(1)
-{
-  font-size: 34px;
 }
 
 #profileInfoText p:nth-child(2)
@@ -69,15 +67,12 @@ body
 
 #profileIcon
 {
-  width: 700px;
-  display: flex;
-  flex-direction: row;
-  margin: 80px auto;
+  margin: 20px auto;
 }
 
 #profileIcon p
 {
-  padding: 0 36px;
+  padding: 5px 0 0 0;
 }
 
 /********************************************************/
@@ -91,18 +86,13 @@ body
 {
   width: 700px;
   margin: 0 auto;
-  font-weight: 400;
+  font-size: 15px;
 }
 
-#education h2
+.educationTitle
 {
-  text-align: center;
-  margin: 15px 0;
-  font-size: 30px;
-  font-weight: 400;
+  margin: 0 0 5px 0;
 }
-
-.headerLarge{ font-size:35px;}
 
 .educationList
 {
@@ -111,7 +101,6 @@ body
 
 .educationName
 {
-  font-size: 20px;
   margin: 5px 0 0 0;
 }
 
@@ -125,6 +114,26 @@ body
 
 .educationListCourse li
 {
-  font-weight: 300;
 }
 /********************************************************/
+
+
+
+
+
+
+/*************** helper ***************/
+.h_oneTab
+{
+  margin-left: 25px;
+}
+
+.h_introTab
+{
+  margin-left: 60px;
+}
+
+.educationListCourse li
+{
+  margin-left: 40px;
+}

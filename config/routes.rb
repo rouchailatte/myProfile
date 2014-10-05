@@ -1,11 +1,11 @@
 Rails.application.routes.draw do
-  get 'welcome/edu'
+  get 'edu' => 'welcome#edu'
 
-  get 'welcome/exp'
+  get 'exp' => 'welcome#exp'
 
-  get 'welcome/proj'
+  get 'proj' => 'welcome#proj'
 
-  get 'welcome/img'
+  get 'img' => 'welcome#img'
 
   root to: 'welcome#edu'
 
