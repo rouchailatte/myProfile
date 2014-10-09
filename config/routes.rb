@@ -7,7 +7,9 @@ Rails.application.routes.draw do
 
   get 'img' => 'welcome#img'
 
-  root to: 'welcome#edu'
+  get 'home' => 'welcome#home'
+
+  root to: 'welcome#home'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

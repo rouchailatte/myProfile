@@ -9,20 +9,11 @@
 <body>
 <div id='name'><p>************************* Benjamin Yuyang Bao *************************</p></div>
 <div id='profileInfo'>
-  <canvas id='profileInfoImg' width="135" height="135"></canvas>
+  <img id='profileInfoImg' width="135" height="135" src="assets/profile.jpg" alt='profile picture, too bad'></img>
   <div id='profileInfoText'>
     {
     <p><span class='h_oneTab'>Intro: 'I'm Ben, a crazy computer euthusiast!</br><span class='h_introTab'>I'm currently a UCLA ugrad senior student,</span></br><span class='h_introTab'>welcome to my website!',</span></span></br></br><span class='h_oneTab'>Email: 'byyagp@gmail.com', </span></br> <span class='h_oneTab'>Cell: '+13109139124',</span></br> <span class='h_oneTab'>Address: '10933 Rochester Ave, Apt 416'</span></br>}</p>
   </div>
-</div>
-
-<div id="profileIcon">
-
-  <p>> <%= link_to("EDUCATION", edu_path) %></p>
-  <p>> <%= link_to("EXPERIENCE", exp_path) %></p>
-  <p>> <%= link_to("PROJECT & IDEAS", proj_path) %></p>
-  <p>> <%= link_to("IMAGE", img_path) %></p>
-
 </div>
 
 <%= yield %>
