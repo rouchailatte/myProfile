@@ -9,6 +9,8 @@ Rails.application.routes.draw do
 
   get 'home' => 'welcome#home'
 
+  get 'skill' => 'welcome#skill'
+
   root to: 'welcome#home'
 
   # The priority is based upon order of creation: first created -> highest priority.

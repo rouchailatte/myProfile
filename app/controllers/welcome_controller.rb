@@ -13,4 +13,8 @@ class WelcomeController < ApplicationController
 
   def img
   end
+
+  def skill
+    
+  end
 end

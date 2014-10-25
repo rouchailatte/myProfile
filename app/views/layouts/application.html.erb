@@ -18,5 +18,23 @@
 
 <%= yield %>
 
+<div id='footer'>
+  ***********************************************************************
+  <h4>Statistics:</h4>
+  <ul id='footerStats'>
+    <li>Page Views: </li>
+    <li>You are the 20th visitor! Thanks!</li>
+  </ul>
+
+  <ul id='footerMenu'>
+    <li>> <%= link_to("EDUCATION", edu_path)%></li>
+    <li>> <%= link_to("EXPERIENCE", exp_path) %></li>
+    <li>> <%= link_to("PROJECT & IDEAS", proj_path) %></li>
+    <li>> <%= link_to("IMAGE", img_path) %></li>
+  </ul>
+
+  <p></p>
+</div>
+
 </body>
 </html>

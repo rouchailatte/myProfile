@@ -24,7 +24,7 @@
 
 body
 {
-  width: 650px;
+  max-width: 650px;
   background-color: #0a0a0a;
   color: #3deb00;
   font-family: 'Andale Mono';
@@ -72,19 +72,19 @@ body
 }
 
 
-#profileIcon a
+#profileIcon a, #footerMenu li a
 {
   color : #3deb00;
   text-decoration: none;
 }
 
-#profileIcon a:hover
+#profileIcon a:hover, #footerMenu li a:hover
 {
   color : #3deb00;
   text-decoration: none;
 }
 
-#profileIcon a:visited
+#profileIcon a:visited, #footerMenu li a:visited
 {
   color : #3deb00;
   text-decoration: none;
@@ -104,7 +104,6 @@ body
 
 #education
 {
-  width: 700px;
   margin: 0 auto;
   font-size: 1em;
 }
@@ -138,6 +137,33 @@ body
 /********************************************************/
 
 
+
+
+
+/************************** footer ******************************/
+#footer
+{
+  margin: 70px 0 0 0;
+}
+
+#footer h4
+{
+  text-align: center;
+}
+
+#footerMenu
+{
+  margin: 20px 0 0 0;
+}
+
+#footerMenu li
+{
+  display: inline;
+  padding: 22px;
+}
+
+
+/********************************************************/
 
 
 
