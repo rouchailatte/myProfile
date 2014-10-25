@@ -1,12 +1,12 @@
 <div id="img">
   <table style="width:100%" id="imgTable">
     <tr>
+      <td><%= link_to image_tag("profile.jpg", :alt => "rss feed"),image_path("profile.jpg"), :class=>"fancybox", :title => 'This is me!'%></td>
       <td><%= link_to image_tag("profile.jpg", :alt => "rss feed"),image_path("profile.jpg"), :class=>"fancybox"%></td>
-      <td><%= image_tag("profile.jpg", :alt => "rss feed") %></td>
     </tr>
     <tr>
-      <td><%= image_tag("profile.jpg", :alt => "rss feed") %></td>
-      <td><%= image_tag("profile.jpg", :alt => "rss feed") %></td>
+      <td><%= link_to image_tag("profile.jpg", :alt => "rss feed"),image_path("profile.jpg"), :class=>"fancybox"%></td>
+      <td><%= link_to image_tag("profile.jpg", :alt => "rss feed"),image_path("profile.jpg"), :class=>"fancybox"%></td>
     </tr>
   </table> 
 </div>
