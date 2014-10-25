@@ -30,7 +30,7 @@ gem 'font-awesome-sass', '~> 4.2.0'
 gem 'font-awesome-rails'
 
 gem 'devise'
-gem 'fancybox2-rails', '~> 0.2.8'
+gem 'lazybox'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

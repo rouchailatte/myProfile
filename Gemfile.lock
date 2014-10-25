@@ -46,8 +46,6 @@ GEM
       warden (~> 1.2.3)
     erubis (2.7.0)
     execjs (2.2.1)
-    fancybox2-rails (0.2.8)
-      railties (>= 3.1.0, < 5.0)
     font-awesome-rails (4.2.0.0)
       railties (>= 3.2, < 5.0)
     font-awesome-sass (4.2.0)
@@ -61,6 +59,7 @@ GEM
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
     json (1.8.1)
+    lazybox (1.0.2)
     mail (2.6.1)
       mime-types (>= 1.16, < 3)
     mime-types (2.3)
@@ -129,11 +128,11 @@ PLATFORMS
 DEPENDENCIES
   coffee-rails (~> 4.0.0)
   devise
-  fancybox2-rails (~> 0.2.8)
   font-awesome-rails
   font-awesome-sass (~> 4.2.0)
   jbuilder (~> 2.0)
   jquery-rails
+  lazybox
   rails (= 4.1.6)
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)

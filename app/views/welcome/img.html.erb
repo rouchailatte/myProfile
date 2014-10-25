@@ -1,23 +1,20 @@
-<script type="text/javascript">
-  $(".fancybox").fancybox({
-    helpers: {
-      title : {
-          type : 'float'
-      }
-    }
-  });
-  
-</script>
-
 <div id="img">
   <table style="width:100%" id="imgTable">
     <tr>
-      <td><%= link_to image_tag("profile.jpg", :alt => "rss feed"),image_path("profile.jpg"), :class=>"fancybox", :title => 'This is me!'%></td>
-      <td><%= link_to image_tag("profile.jpg", :alt => "rss feed"),image_path("profile.jpg"), :class=>"fancybox"%></td>
+      <td><%= link_to image_tag("img1.jpg", :alt => "rss feed", width:"300", height:"200"),image_path("img1.jpg"), rel: :lazybox, :title => 'This is me!'%></td>
+      <td><%= link_to image_tag("img2.jpg", :alt => "rss feed", width:"300", height:"200"),image_path("img2.jpg"), rel: :lazybox%></td>
     </tr>
     <tr>
-      <td><%= link_to image_tag("profile.jpg", :alt => "rss feed"),image_path("profile.jpg"), :class=>"fancybox"%></td>
-      <td><%= link_to image_tag("profile.jpg", :alt => "rss feed"),image_path("profile.jpg"), :class=>"fancybox"%></td>
+      <td><%= link_to image_tag("img3.jpg", :alt => "rss feed", width:"300", height:"210"),image_path("img3.jpg"), rel: :lazybox%></td>
+      <td><%= link_to image_tag("img4.jpg", :alt => "rss feed", width:"300", height:"190"),image_path("img4.jpg"), rel: :lazybox%></td>
+    </tr>
+    <tr>
+      <td><%= link_to image_tag("img5.jpg", :alt => "rss feed", width:"300", height:"185"),image_path("img5.jpg"), rel: :lazybox%></td>
+      <td><%= link_to image_tag("img6.png", :alt => "rss feed", width:"300", height:"175"),image_path("img6.png"), rel: :lazybox%></td>
+    </tr>
+    <tr>
+      <td><%= link_to image_tag("img7.png", :alt => "rss feed", width:"300", height:"185"),image_path("img7.png"), rel: :lazybox%></td>
+      <td><%= link_to image_tag("img8.png", :alt => "rss feed", width:"300", height:"185"),image_path("img8.png"), rel: :lazybox%></td>
     </tr>
   </table> 
 

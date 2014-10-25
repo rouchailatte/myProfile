@@ -13,19 +13,12 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require_tree .
-//= require fancybox
+//= require lazybox
 
-// $(document).ready(function() {
-//   $(".fancybox").fancybox({
-//     openEffect  : 'elastic',
-//     closeEffect : 'elastic',
+$(document).ready(function() {
+  $('a[rel*=lazybox]').lazybox(
+    {
+      klass: 'lazy', close: false, niceClose: true
+    });
 
-//     helpers: {
-//       title : {
-//           type : 'float'
-//       }
-//     }
-//   });
-// });
-// deferred in html view
+});

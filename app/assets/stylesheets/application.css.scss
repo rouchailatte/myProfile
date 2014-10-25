@@ -1,9 +1,7 @@
 
 /*
  *= require font-awesome
- *= require_self
- *= require fancybox
- *= require_tree 
+ *= require lazybox
  */
 
 /********* custom For the font *********/
@@ -149,11 +147,22 @@ body
 /************************** img ******************************/
 #imgTable tr td
 {
-  border: 2px solid #3deb00;
+  border: 1px solid #3deb00;
   padding: 10px;
 }
 
 /********************************************************/
+
+
+/************************** lazybox ******************************/
+#lazybox
+{
+  padding: 0;
+  border: 5px solid #000000;
+}
+
+/********************************************************/
+
 
 
 
