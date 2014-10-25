@@ -25,10 +25,14 @@
 
 *{padding: 0; margin: 0;}
 
+html 
+{ 
+  background: url(green_bg.jpg); 
+}
+
 body
 {
   max-width: 650px;
-  background-color: #0a0a0a;
   color: #3deb00;
   font-family: 'Andale Mono';
   font-size: 90%;
@@ -150,23 +154,6 @@ body
 }
 
 /********************************************************/
-
-
-
-
-
-/************************** greensidebar ******************************/
-#greenSideBar
-{
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: auto;
-
-}
-
-/********************************************************/
-
 
 
 
