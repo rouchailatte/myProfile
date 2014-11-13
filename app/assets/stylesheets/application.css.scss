@@ -100,6 +100,24 @@ body
   padding: 5px 0 0 0;
 }
 
+#customLink a
+{
+  color : #3deb00;
+  text-decoration: none;
+}
+
+#customLink a:hover
+{
+  color : #3deb00;
+  text-decoration: none;
+}
+
+#customLink a:visited
+{
+  color : #3deb00;
+  text-decoration: none;
+}
+
 /********************************************************/
 
 
@@ -123,6 +141,11 @@ body
   list-style: none;
 }
 
+.educationList li
+{
+  padding-top: 2px;
+}
+
 .educationName
 {
   margin: 5px 0 0 0;
@@ -136,8 +159,15 @@ body
   padding: 10px 0 0 15px;
 }
 
+.skillList
+{
+  list-style: none;
+  padding: 10px 0 0 15px;
+}
+
 .educationListCourse li
 {
+  padding-top: 3px;
 }
 /********************************************************/
 
