@@ -1,12 +1,13 @@
 <div id="education">
-  <p class='educationTitle'>EDUCATION [</br>{</p>
+  <p class='educationTitle'>EDUCATION [<button class='buttons' id='buttonOne'><%= fa_icon('angle-double-down')%></button></br>{</p>
   <p class="educationName">
-    <span class='h_oneTab'>College: 'University of California, Los Angeles (UCLA) - Los Angeles, USA',</span>
+    <span class='h_oneTab'>College: 'UCLA'</span><
   </p>
 
   <ul class="educationList">
     <li><span class='h_oneTab'>Major: 'B.S. in Mathematics of Computation',</span></li>
     <li><span class='h_oneTab'>Major GPA: '3.7/4',</span></li>
+    <div class='responderOne'>
     <li><span class='h_oneTab'>Major Courses taken: {
       <ul class='educationListCourse'>
         <li>1: 'Math 32a, 32b: Multivariable Calculus',</li>
@@ -31,24 +32,47 @@
         <li>20: 'CS 170A: Computer Methods',</li>
         <li>21: 'CS 180: Algorithm and Complexity'</li>
       </ul><span class='h_oneTab'>}</span>
-    </li></span>},
-  </ul>
+    </li></span></div>
+  </ul>},
 
 
 
 
   <p class="educationName" id="educationNameSecond">
       <p>{</p>
-      <span class='h_oneTab'>College: Yale University - New Haven, USA</span>
+      <span class='h_oneTab'>College: 'Yale University - New Haven',</span>
   </p>
 
   <ul class="educationList">
-    <li><span class='h_oneTab'>Program: 'Summer Program, 2014'</span></li>
+    <li><span class='h_oneTab'>Program: 'Summer Program, 2014',</span></li>
+    <div class='responderOne'>
     <li><span class='h_oneTab'>Courses: {
       <ul class='educationListCourse'>
         <li>1: 'Mathematical Logic'</li>
       </ul><span class='h_oneTab'>}</span>
-    </span></li>}]
+    </span></li></div>
     
-  </ul>
+  </ul>}]
 </div>
+<script type="text/javascript">
+  
+  $.fn.slideFadeToggle = function(){
+    return this.animate({ opacity: 'toggle', height: 'toggle' }, 350, 'swing');
+  };
+
+  var rotateOne = false;
+  $('#buttonOne').on('click', function(){
+    $('.responderOne').slideFadeToggle();
+    if(!rotateOne)
+    {
+      $('#buttonOne').addClass('rotate');
+      rotateOne = true;
+    }
+    else
+    {
+      $('#buttonOne').removeClass('rotate');
+      rotateOne = false;
+    }
+  });
+</script>
+

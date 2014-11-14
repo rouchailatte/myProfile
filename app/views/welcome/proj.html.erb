@@ -1,16 +1,40 @@
 <div>
-  <p>Integer Partition Qt C++ project</p><br>
+  <p>Integer Partition Qt C++ project</p><button class='buttons' id='buttonThree'><%= fa_icon('angle-double-down')%></button><br>
   <p class='h_oneTab'> ---- with Professor Stephen DeSalvo, UCLA</p>
+  <div class='responderThree'>
   <ul class='educationListCourse'>
     <li>* Build a Qt based on C++ cross-plaqorm applicaVon to perform 8 basic transformation of Integer Partitions and display the corresponding Ferrers Diagram, including Move, Shir, Cut, Paste, Union, Sum, Shred and Stretch.</li> <br>
     <li id="customLink">* For the basic transformation of Integer Partitions, pls visit <%= link_to "Asymptotic Stability - Igor Pak", "http://www.math.ucla.edu/~pak/papers/stab5.pdf", :target => "_blank"%></li> <br>
     <li id="customLink">* <%= link_to "Source Code", "https://github.com/rouchailatte/IntPartProj", :target => "_blank"%></li>
-  </ul>
+  </ul></div>
   <br><br>
   <p>Corporate Culture Consulting Analyst</p><br>
   <p class='h_oneTab'> ---- with Professor Eric Flamholtz, UCLA</p>
+  <div class='responderThree'>
   <ul class='educationListCourse'>
     <li>* Launched numbers of quesVonnaires and approximately 15 interviews with employees of all posiVons and extracted the data.</li><br>
     <li>* Calculate the correlaVon index between these two factors by using various staVsVcal methods including “regression analysis”.</li>
-  </ul>
+  </ul></div>
 </div>
+
+<script type="text/javascript">
+  
+  $.fn.slideFadeToggle = function(){
+    return this.animate({ opacity: 'toggle', height: 'toggle' }, 350, 'swing');
+  };
+
+  var rotateThree = false;
+  $('#buttonThree').on('click', function(){
+    $('.responderThree').slideFadeToggle();
+    if(!rotateThree)
+    {
+      $('#buttonThree').addClass('rotate');
+      rotateThree = true;
+    }
+    else
+    {
+      $('#buttonThree').removeClass('rotate');
+      rotateThree = false;
+    }
+  });
+</script>

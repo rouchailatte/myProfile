@@ -225,6 +225,27 @@ body
 
 
 
+
+/************************** button ******************************/
+.buttons
+{
+  color : #3deb00;
+  text-decoration: none;
+  background:none!important;
+  border:none; 
+  padding:0!important;
+  font-family:'Andale Mono';
+  font-size: 14px;
+  float: right;
+  cursor: pointer;
+}
+
+/********************************************************/
+
+
+
+
+
 /*************** helper ***************/
 .h_oneTab
 {
@@ -239,4 +260,23 @@ body
 .educationListCourse li
 {
   margin-left: 40px;
+}
+
+.rotate {
+
+/* Safari */
+-webkit-transform: rotate(90deg);
+
+/* Firefox */
+-moz-transform: rotate(90deg);
+
+/* IE */
+-ms-transform: rotate(90deg);
+
+/* Opera */
+-o-transform: rotate(90deg);
+
+/* Internet Explorer */
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
 }

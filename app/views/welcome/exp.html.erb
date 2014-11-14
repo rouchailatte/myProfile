@@ -1,32 +1,34 @@
 <div id="education">
-  <p class='educationTitle'>EXPERIENCE [</br>{</p>
+  <p class='educationTitle'>EXPERIENCE [<button class='buttons' id='buttonTwo'><%= fa_icon('angle-double-down')%></button></br>{</p>
 
   <ul class="educationList">
     <li><span class='h_oneTab'>Role: 'Team Initiator/Technical Director',</span></li>
     <li><span class='h_oneTab'>Company: 'UCLA Startup',</span></li>
     <li><span class='h_oneTab'>Industry: 'Startup & Software',</span></li>
     <li><span class='h_oneTab'>Time: '2013.5 -',</span></li>
+    <div class='responderTwo'>
     <li><span class='h_oneTab'>What I acheived: {
       <ul class='educationListCourse'>
         <li>1: 'Wrote a 2000-line console applicaVon (in C++) to simulate the basketball ranking system, which ranks the basketball enthusiasts based on their staVsVcs on court, and also provides funcVonaliVes including “Find a Match”, “Find a Court” etc.',</li> <br>
         <li>2: 'Pitch the blueprint of project Hierarchy to UCLA Startup and got into the second round.',</li> <br>
         <li>3: 'Did front-end design(UI/UX) for 10 pages of applicaVon and back-end (users and databases) design on “Hierarchy”',</li>
       </ul><span class='h_oneTab'>}</span>
-    </li></span>},
+    </li></span></div>},
   </ul>
-  <br>{}
+  <br>{
   <ul class="educationList">
     <li><span class='h_oneTab'>Role: 'Project Specialist',</span></li>
     <li><span class='h_oneTab'>Company: 'SAP',</span></li>
     <li><span class='h_oneTab'>Industry: 'IT & Software',</span></li>
     <li><span class='h_oneTab'>Time: '2014.6 - 2014.9',</span></li>
+    <div class='responderTwo'>
     <li><span class='h_oneTab'>What I acheived: {
       <ul class='educationListCourse'>
         <li>1: 'Created and maintained roles and authorizaVon in about 5 SAP modules (SAP ECC, BW, GTS, DU1, PU1...) through SAP NetWeaver including TransacVon Codes: SU01, SU10, PFCG, SE16, SM12, SUIM',</li> <br>
         <li>2: 'Helped designing and analyzing the risks/conflicts of nearly 200 composite roles for Cardinal Health Inc during project Penguin',</li> <br>
         <li>3: 'Processed numbers of Vckets and role requests by performing the role analysis and system simulaVons in PM1',</li>
       </ul><span class='h_oneTab'>}</span>
-    </li></span>},
+    </li></span></div>},
   </ul>
 
   <br>{
@@ -35,6 +37,7 @@
     <li><span class='h_oneTab'>Company: 'SchooLinks Inc',</span></li>
     <li><span class='h_oneTab'>Industry: 'Internet',</span></li>
     <li><span class='h_oneTab'>Time: '2014.4 - 2014.6',</span></li>
+    <div class='responderTwo'>
     <li><span class='h_oneTab'>What I acheived: {
       <ul class='educationListCourse'>
         <li>1: 'Revamped the enVre database structure with teammates by rebuilding the EnVty-RelaVonship Diagram from scratch containing 5 main categories, 87 database tables with approximately 500 data fields.',</li> <br>
@@ -43,7 +46,7 @@
         <li>4: 'Come up with several new features and layouts including “departments”, “company pages”, “my chances” etc.',</li> <br>
         <li>5: 'Created a 5-star-raVng ranking algorithm (in php), which uVlizes Wilson Confidence algorithm and eliminates outliers.',</li>
       </ul><span class='h_oneTab'>}</span>
-    </li></span>},
+    </li></span></div>},
   </ul>
 
   <br>{
@@ -52,12 +55,35 @@
     <li><span class='h_oneTab'>Company: 'English First',</span></li>
     <li><span class='h_oneTab'>Industry: 'IT',</span></li>
     <li><span class='h_oneTab'>Time: '2012.6 - 2012.9',</span></li>
+    <div class='responderTwo'>
     <li><span class='h_oneTab'>What I acheived: {
       <ul class='educationListCourse'>
         <li>1: 'Wrote approximately 15 database files of teaching content and audio materials in JSON format, and connect the backend data to the IOS applicaVon “Engage” through its API.',</li> <br>
         <li>2: 'ImplemenVng Amazon cloud server EC3, S3 and parVcipaVng in deciding database structure for iOS applicaVon “Engage”.',</li> <br>
         <li>3: 'Designed and carried out 20 email templates through HTML and CSS, and implement them with Mandrill API in the back-end.',</li>
       </ul><span class='h_oneTab'>}</span>
-    </li></span>},
+    </li></span>}</div>,
   </ul>
 </div>
+
+<script type="text/javascript">
+  
+  $.fn.slideFadeToggle = function(){
+    return this.animate({ opacity: 'toggle', height: 'toggle' }, 350, 'swing');
+  };
+
+  var rotateTwo = false;
+  $('#buttonTwo').on('click', function(){
+    $('.responderTwo').slideFadeToggle();
+    if(!rotateTwo)
+    {
+      $('#buttonTwo').addClass('rotate');
+      rotateTwo = true;
+    }
+    else
+    {
+      $('#buttonTwo').removeClass('rotate');
+      rotateTwo = false;
+    }
+  });
+</script>

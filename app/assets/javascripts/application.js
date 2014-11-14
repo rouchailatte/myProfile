@@ -12,8 +12,9 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
 //= require lazybox
+//= require turbolinks
+//= require_tree .
 
 $(document).ready(function() {
   $('a[rel*=lazybox]').lazybox(
@@ -22,3 +23,5 @@ $(document).ready(function() {
     });
 
 });
+
+
