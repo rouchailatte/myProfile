@@ -1,7 +1,10 @@
 <div id="img">
   <p>These are the work that I've done! (some laptap murals and amature logo designs, feel free to click for larger image ;)</p>
   <br><br>
-  <table style="width:100%" id="imgTable">
+  <button class='buttons' id='buttonOne'><%= fa_icon('angle-double-down')%></button>
+  <p>> Patterns: </p>
+  <br>
+  <table style="width:100%" class="imgTable">
     <tr>
       <td><%= link_to image_tag("img1.jpg", :alt => "rss feed", width:"300", height:"200"),image_path("img1.jpg"), rel: :lazybox, :title => 'This is me!'%></td>
       <td><%= link_to image_tag("img2.jpg", :alt => "rss feed", width:"300", height:"200"),image_path("img2.jpg"), rel: :lazybox%></td>
@@ -11,12 +14,75 @@
       <td><%= link_to image_tag("img4.jpg", :alt => "rss feed", width:"300", height:"190"),image_path("img4.jpg"), rel: :lazybox%></td>
     </tr>
     <tr>
-      <td><%= link_to image_tag("img5.jpg", :alt => "rss feed", width:"300", height:"185"),image_path("img5.jpg"), rel: :lazybox%></td>
+      <td><%= link_to image_tag("p2.jpg", :alt => "rss feed", width:"300", height:"200"),image_path("p2.jpg"), rel: :lazybox%></td>
+      <td><%= link_to image_tag("p1.jpg", :alt => "rss feed", width:"300", height:"362"),image_path("p1.jpg"), rel: :lazybox%></td>
+    </tr>
+    <tr>
+      <td><%= link_to image_tag("p3.jpg", :alt => "rss feed", width:"300", height:"356"),image_path("p3.jpg"), rel: :lazybox%></td>
+      <td><%= link_to image_tag("p4.jpg", :alt => "rss feed", width:"300", height:"368"),image_path("p4.jpg"), rel: :lazybox%></td>
+    </tr>
+  </table> 
+
+  <br><br><button class='buttons' id='buttonTwo'><%= fa_icon('angle-double-down')%></button>
+  <p>> Logo Design: </p>
+  <br>
+
+  <table style="width:100%" class="imgTable">
+    <tr>
+      <td><%= link_to image_tag("jct.png", :alt => "rss feed", width:"300", height:"100"),image_path("jct.png"), rel: :lazybox%></td>
       <td><%= link_to image_tag("img6.png", :alt => "rss feed", width:"300", height:"175"),image_path("img6.png"), rel: :lazybox%></td>
     </tr>
     <tr>
       <td><%= link_to image_tag("img7.png", :alt => "rss feed", width:"300", height:"185"),image_path("img7.png"), rel: :lazybox%></td>
       <td><%= link_to image_tag("img8.png", :alt => "rss feed", width:"300", height:"185"),image_path("img8.png"), rel: :lazybox%></td>
     </tr>
+  </table>
+
+  <br><br><button class='buttons' id='buttonThree'><%= fa_icon('angle-double-down')%></button>
+  <p>> Webpage Designs: </p>
+  <br>
+
+  <table style="width:100%" class="imgTable">
+    <tr>
+      <td><%= link_to image_tag("longWeb.jpg", :alt => "rss feed", width:"630", height:"1000"),image_path("longWeb.jpg"), rel: :lazybox%></td>
+    </tr>
+  </table> 
+
+
+  <br><br><button class='buttons' id='buttonFour'><%= fa_icon('angle-double-down')%></button>
+  <p>> Drawing: </p>
+  <br>
+
+  <table style="width:100%" class="imgTable">
+    <tr>
+      <td><%= link_to image_tag("d1.jpg", :alt => "rss feed", width:"300", height:"380"),image_path("d1.jpg"), rel: :lazybox%></td>
+      <td><%= link_to image_tag("d2.jpg", :alt => "rss feed", width:"300", height:"400"),image_path("d2.jpg"), rel: :lazybox%></td>
+    </tr>
   </table> 
 </div>
+
+
+<script type="text/javascript">
+  
+  $.fn.slideFadeToggle = function(){
+    return this.animate({ opacity: 'toggle', height: 'toggle' }, 350, 'swing');
+  };
+
+  var rotateOne = false;
+  $('#buttonOne').on('click', function(){
+    $('.responderOne').slideFadeToggle();
+    if(!rotateOne)
+    {
+      $('#buttonOne').addClass('rotate');
+      rotateOne = true;
+    }
+    else
+    {
+      $('#buttonOne').removeClass('rotate');
+      rotateOne = false;
+    }
+  });
+
+
+
+</script>

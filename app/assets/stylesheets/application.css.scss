@@ -100,22 +100,25 @@ body
   padding: 5px 0 0 0;
 }
 
-#customLink a
+.customLink a
 {
-  color : #3deb00;
+  color : #d824ff;
   text-decoration: none;
+  font-weight: bold;
 }
 
-#customLink a:hover
+.customLink a:hover
 {
-  color : #3deb00;
+  color : #d824ff;
   text-decoration: none;
+  font-weight: bold;
 }
 
-#customLink a:visited
+.customLink a:visited
 {
-  color : #3deb00;
+  color : #d824ff;
   text-decoration: none;
+  font-weight: bold;
 }
 
 /********************************************************/
@@ -175,7 +178,7 @@ body
 
 
 /************************** img ******************************/
-#imgTable tr td
+.imgTable tr td
 {
   border: 1px solid #3deb00;
   padding: 10px;
@@ -247,6 +250,11 @@ body
 
 
 /*************** helper ***************/
+.span_bold
+{
+  font-weight: bold;
+}
+
 .h_oneTab
 {
   margin-left: 25px;
