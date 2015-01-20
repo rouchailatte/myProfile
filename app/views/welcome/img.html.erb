@@ -1,64 +1,72 @@
 <div id="img">
   <p>These are the work that I've done! (some laptap murals and amature logo designs, feel free to click for larger image ;)</p>
   <br><br>
-  <button class='buttons' id='buttonOne'><%= fa_icon('angle-double-down')%></button>
+  <button class='buttons' id='buttonPattern'><%= fa_icon('angle-double-down')%></button>
   <p>> Patterns: </p>
   <br>
-  <table style="width:100%" class="imgTable">
-    <tr>
-      <td><%= link_to image_tag("img1.jpg", :alt => "rss feed", width:"300", height:"200"),image_path("img1.jpg"), rel: :lazybox, :title => 'This is me!'%></td>
-      <td><%= link_to image_tag("img2.jpg", :alt => "rss feed", width:"300", height:"200"),image_path("img2.jpg"), rel: :lazybox%></td>
-    </tr>
-    <tr>
-      <td><%= link_to image_tag("img3.jpg", :alt => "rss feed", width:"300", height:"210"),image_path("img3.jpg"), rel: :lazybox%></td>
-      <td><%= link_to image_tag("img4.jpg", :alt => "rss feed", width:"300", height:"190"),image_path("img4.jpg"), rel: :lazybox%></td>
-    </tr>
-    <tr>
-      <td><%= link_to image_tag("p2.jpg", :alt => "rss feed", width:"300", height:"200"),image_path("p2.jpg"), rel: :lazybox%></td>
-      <td><%= link_to image_tag("p1.jpg", :alt => "rss feed", width:"300", height:"362"),image_path("p1.jpg"), rel: :lazybox%></td>
-    </tr>
-    <tr>
-      <td><%= link_to image_tag("p3.jpg", :alt => "rss feed", width:"300", height:"356"),image_path("p3.jpg"), rel: :lazybox%></td>
-      <td><%= link_to image_tag("p4.jpg", :alt => "rss feed", width:"300", height:"368"),image_path("p4.jpg"), rel: :lazybox%></td>
-    </tr>
-  </table> 
 
-  <br><br><button class='buttons' id='buttonTwo'><%= fa_icon('angle-double-down')%></button>
+  <div class='responderPattern'>
+    <table style="width:100%" class="imgTable">
+      <tr>
+        <td><%= link_to image_tag("img1.jpg", :alt => "rss feed", width:"300", height:"200"),image_path("img1.jpg"), rel: :lazybox, :title => 'This is me!'%></td>
+        <td><%= link_to image_tag("img2.jpg", :alt => "rss feed", width:"300", height:"200"),image_path("img2.jpg"), rel: :lazybox%></td>
+      </tr>
+      <tr>
+        <td><%= link_to image_tag("img3.jpg", :alt => "rss feed", width:"300", height:"210"),image_path("img3.jpg"), rel: :lazybox%></td>
+        <td><%= link_to image_tag("img4.jpg", :alt => "rss feed", width:"300", height:"190"),image_path("img4.jpg"), rel: :lazybox%></td>
+      </tr>
+      <tr>
+        <td><%= link_to image_tag("p2.jpg", :alt => "rss feed", width:"300", height:"200"),image_path("p2.jpg"), rel: :lazybox%></td>
+        <td><%= link_to image_tag("p1.jpg", :alt => "rss feed", width:"300", height:"362"),image_path("p1.jpg"), rel: :lazybox%></td>
+      </tr>
+      <tr>
+        <td><%= link_to image_tag("p3.jpg", :alt => "rss feed", width:"300", height:"356"),image_path("p3.jpg"), rel: :lazybox%></td>
+        <td><%= link_to image_tag("p4.jpg", :alt => "rss feed", width:"300", height:"368"),image_path("p4.jpg"), rel: :lazybox%></td>
+      </tr>
+    </table> 
+  </div>
+
+  <br><br><button class='buttons' id='buttonLogo'><%= fa_icon('angle-double-down')%></button>
   <p>> Logo Design: </p>
   <br>
 
-  <table style="width:100%" class="imgTable">
-    <tr>
-      <td><%= link_to image_tag("jct.png", :alt => "rss feed", width:"300", height:"100"),image_path("jct.png"), rel: :lazybox%></td>
-      <td><%= link_to image_tag("img6.png", :alt => "rss feed", width:"300", height:"175"),image_path("img6.png"), rel: :lazybox%></td>
-    </tr>
-    <tr>
-      <td><%= link_to image_tag("img7.png", :alt => "rss feed", width:"300", height:"185"),image_path("img7.png"), rel: :lazybox%></td>
-      <td><%= link_to image_tag("img8.png", :alt => "rss feed", width:"300", height:"185"),image_path("img8.png"), rel: :lazybox%></td>
-    </tr>
-  </table>
+  <div class='responderLogo'>
+    <table style="width:100%" class="imgTable">
+      <tr>
+        <td><%= link_to image_tag("jct.png", :alt => "rss feed", width:"300", height:"100"),image_path("jct.png"), rel: :lazybox%></td>
+        <td><%= link_to image_tag("img6.png", :alt => "rss feed", width:"300", height:"175"),image_path("img6.png"), rel: :lazybox%></td>
+      </tr>
+      <tr>
+        <td><%= link_to image_tag("img7.png", :alt => "rss feed", width:"300", height:"185"),image_path("img7.png"), rel: :lazybox%></td>
+        <td><%= link_to image_tag("img8.png", :alt => "rss feed", width:"300", height:"185"),image_path("img8.png"), rel: :lazybox%></td>
+      </tr>
+    </table>
+  </div>
 
-  <br><br><button class='buttons' id='buttonThree'><%= fa_icon('angle-double-down')%></button>
+  <br><br><button class='buttons' id='buttonWeb'><%= fa_icon('angle-double-down')%></button>
   <p>> Webpage Designs: </p>
   <br>
 
-  <table style="width:100%" class="imgTable">
-    <tr>
-      <td><%= link_to image_tag("longWeb.jpg", :alt => "rss feed", width:"630", height:"1000"),image_path("longWeb.jpg"), rel: :lazybox%></td>
-    </tr>
-  </table> 
+  <div class='responderWeb'>
+    <table style="width:100%" class="imgTable">
+      <tr>
+        <td><%= link_to image_tag("longWeb.jpg", :alt => "rss feed", width:"630", height:"1000"),image_path("longWeb.jpg"), rel: :lazybox%></td>
+      </tr>
+    </table> 
+  </div>
 
-
-  <br><br><button class='buttons' id='buttonFour'><%= fa_icon('angle-double-down')%></button>
+  <br><br><button class='buttons' id='buttonDrawing'><%= fa_icon('angle-double-down')%></button>
   <p>> Drawing: </p>
   <br>
 
-  <table style="width:100%" class="imgTable">
-    <tr>
-      <td><%= link_to image_tag("d1.jpg", :alt => "rss feed", width:"300", height:"380"),image_path("d1.jpg"), rel: :lazybox%></td>
-      <td><%= link_to image_tag("d2.jpg", :alt => "rss feed", width:"300", height:"400"),image_path("d2.jpg"), rel: :lazybox%></td>
-    </tr>
-  </table> 
+  <div class='responderDrawing'>
+    <table style="width:100%" class="imgTable">
+      <tr>
+        <td><%= link_to image_tag("d1.jpg", :alt => "rss feed", width:"300", height:"380"),image_path("d1.jpg"), rel: :lazybox%></td>
+        <td><%= link_to image_tag("d2.jpg", :alt => "rss feed", width:"300", height:"400"),image_path("d2.jpg"), rel: :lazybox%></td>
+      </tr>
+    </table> 
+  </div>
 </div>
 
 
@@ -68,21 +76,26 @@
     return this.animate({ opacity: 'toggle', height: 'toggle' }, 350, 'swing');
   };
 
-  var rotateOne = false;
-  $('#buttonOne').on('click', function(){
-    $('.responderOne').slideFadeToggle();
-    if(!rotateOne)
+  function toggle(buttonId, responderId){
+    var rotate = false;
+    $(buttonId).on('click', function(){
+    $(responderId).slideFadeToggle();
+    if(!rotate)
     {
-      $('#buttonOne').addClass('rotate');
-      rotateOne = true;
+      $(buttonId).addClass('rotate');
+      rotate = true;
     }
     else
     {
-      $('#buttonOne').removeClass('rotate');
-      rotateOne = false;
+      $(buttonId).removeClass('rotate');
+      rotate = false;
     }
   });
-
-
+  }
+  
+  toggle('#buttonPattern', '.responderPattern');
+  toggle('#buttonLogo', '.responderLogo');
+  toggle('#buttonWeb', '.responderWeb');
+  toggle('#buttonDrawing', '.responderDrawing');
 
 </script>

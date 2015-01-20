@@ -15,6 +15,14 @@
     <li>* Launched numbers of questionnaires and approximately 15 interviews with employees of all positions and extracted the data.</li><br>
     <li>* Calculate the correlation index between these two factors by using various statistical methods including “regression analysis”.</li>
   </ul></div>
+  <br><br>
+  <p>The Project Hub Idea</p>
+  <div class='responderThree'>
+    <ul class='educationListCourse'>
+      <li>* Create a online hub for academic projects and idea exchange</li>
+      <li>* Working on the basic idea and model right now..</li>
+    </ul>
+  </div>
 </div>
 
 <script type="text/javascript">
@@ -23,18 +31,25 @@
     return this.animate({ opacity: 'toggle', height: 'toggle' }, 350, 'swing');
   };
 
-  var rotateThree = false;
-  $('#buttonThree').on('click', function(){
-    $('.responderThree').slideFadeToggle();
-    if(!rotateThree)
+
+  function toggle(buttonId, responderId){
+    var rotate = false;
+    $(buttonId).on('click', function(){
+    $(responderId).slideFadeToggle();
+    if(!rotate)
     {
-      $('#buttonThree').addClass('rotate');
-      rotateThree = true;
+      $(buttonId).addClass('rotate');
+      rotate = true;
     }
     else
     {
-      $('#buttonThree').removeClass('rotate');
-      rotateThree = false;
+      $(buttonId).removeClass('rotate');
+      rotate = false;
     }
   });
+
+  }
+
+  toggle('#buttonThree', '.responderThree');
+
 </script>
